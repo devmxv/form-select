@@ -1,8 +1,17 @@
 <?php
+/*--------------------------------
+| test-select.php: Script de ejemplo para demostrar el funcionamiento
+| de cómo obtener un dato de la base de datos y usarlo en un select
+|---------------------------------
+| Creación: Luis Martín Vázquez
+| Fecha: Mayo 2019
+|---------------------------------
+*/
+//---definir datos de acceso a bd
 $host = "localhost";
-$user = "dygnmhgs_lm";
-$password = "V8IDp#FxUq0I";
-$database = "dygnmhgs_myblog";
+$user = "root";
+$password = "";
+$database = "";
 
 $mysqli = new mysqli($host,$user,$password,$database);
 if($mysqli->connect_errno){
@@ -10,7 +19,8 @@ if($mysqli->connect_errno){
 }
 
 //---armando la conexión, instanciando definición de conexión
-$mysqli = new mysqli("localhost","dygnmhgs_lm","V8IDp#FxUq0I","dygnmhgs_myblog");
+//---Para probar insertar aquí los datos de tu servidor
+$mysqli = new mysqli("localhost","","","");
 
 ?>
 
